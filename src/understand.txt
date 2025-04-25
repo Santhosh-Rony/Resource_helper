@@ -1,0 +1,32 @@
+
+🔄 Submission Flow Summary
+text
+Copy
+Edit
+User fills form → clicks submit
+↳ `handleSubmit` runs
+   ↳ Sends form via `fetch`
+   ↳ On success:
+       - reset form
+       - show success message
+       - scroll to top after 5s
+
+
+
+🧩 Overall Linking Map
+text
+Copy
+Edit
+App
+├── Header
+├── Features
+│   ├── FeatureCard (x4)
+├── RequestForm
+│   ├── formRef (for <form>)
+│   ├── handleSubmit()
+│   └── showSuccess (state → success-message)
+├── WhatsAppButton
+└── Footer
+
+useEffect #1 → applies fade-in to any .fade-in
+useEffect #2 → applies VanillaTilt to any [data-tilt]
